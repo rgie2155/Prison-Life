@@ -1,4 +1,5 @@
--- Made by rgie
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -7,6 +8,7 @@ local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Spawnshotgun = Instance.new("TextButton")
 local Spawnak = Instance.new("TextButton")
+local Infiniteyield = Instance.new("TextButton")
 
 --Properties:
 
@@ -56,4 +58,19 @@ Spawnak.TextSize = 14.000
 Spawnak.TextWrapped = true
 Spawnak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
+end)
+
+Infiniteyield.Name = "Infiniteyield"
+Infiniteyield.Parent = Frame
+Infiniteyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Infiniteyield.Position = UDim2.new({0.027, 0,0.584, 0)
+Infiniteyield.Size = UDim2.new(0, 284, 0, 50)
+Infiniteyield.Font = Enum.Font.SciFi
+Infiniteyield.Text = "Spawn AK-47"
+Infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+Infiniteyield.TextScaled = true
+Infiniteyield.TextSize = 14.000
+Infiniteyield.TextWrapped = true
+Infiniteyield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/infiniteyield.lua',true))()
 end)
