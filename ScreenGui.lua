@@ -71,5 +71,5 @@ Infiniteyield.TextScaled = true
 Infiniteyield.TextSize = 14.000
 Infiniteyield.TextWrapped = true
 Infiniteyield.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/infiniteyield.lua',true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
