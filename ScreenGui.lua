@@ -58,18 +58,3 @@ Spawnak.TextWrapped = true
 Spawnak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
 end)
-
-Infiniteyield.Name = "Infiniteyield"
-Infiniteyield.Parent = Frame
-Infiniteyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Infiniteyield.Position = UDim2.new({0.027, 0,0.584, 0)
-Infiniteyield.Size = UDim2.new(0, 284, 0, 50)
-Infiniteyield.Font = Enum.Font.SciFi
-Infiniteyield.Text = "Infinite yield"
-Infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
-Infiniteyield.TextScaled = true
-Infiniteyield.TextSize = 14.000
-Infiniteyield.TextWrapped = true
-Infiniteyield.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
