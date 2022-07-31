@@ -55,6 +55,6 @@ Spawnak.TextColor3 = Color3.fromRGB(0, 0, 0)
 Spawnak.TextScaled = true
 Spawnak.TextSize = 14.000
 Spawnak.TextWrapped = true
-Sawnak.MouseButton1Down:connect(function()
+Spawnak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
 end)
