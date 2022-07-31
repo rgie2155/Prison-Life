@@ -28,7 +28,7 @@ TextLabel.Text = "Prison Life gui"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 30.000
 
-Spawnshotgun.Name = "awnshotgun"
+Spawnshotgun.Name = "Spawnshotgun"
 Spawnshotgun.Parent = Frame
 Spawnshotgun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Spawnshotgun.Position = UDim2.new(0.0265780725, 0, 0.204244033, 0)
