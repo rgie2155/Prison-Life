@@ -1,0 +1,1 @@
+game.Workspace.Prison_ITEMS.giver["AK47"].ITEMPICKUP.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
