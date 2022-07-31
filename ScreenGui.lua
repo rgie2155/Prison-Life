@@ -7,7 +7,6 @@ local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Spawnshotgun = Instance.new("TextButton")
 local Spawnak = Instance.new("TextButton")
-local Infiniteyield = Instance.new("TextButton")
 
 --Properties:
 
