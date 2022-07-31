@@ -57,7 +57,7 @@ Spawnak.TextScaled = true
 Spawnak.TextSize = 14.000
 Spawnak.TextWrapped = true
 Spawnak.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak.lua',true))()
 end)
 
 criminal.Name = "criminal"
