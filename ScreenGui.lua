@@ -89,5 +89,3 @@ Tp.TextWrapped = true
 Tp.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/clicktp.lua',true))()
 end)
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/blacklist.lua',true))()
