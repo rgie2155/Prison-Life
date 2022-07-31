@@ -6,7 +6,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local Spawnshotgun = Instance.new("Frame")
+local Spawnshotgun = Instance.new("TextButton")
 
 --Properties:
 
