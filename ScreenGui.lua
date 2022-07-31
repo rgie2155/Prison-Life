@@ -8,6 +8,7 @@ local TextLabel = Instance.new("TextLabel")
 local Spawnshotgun = Instance.new("TextButton")
 local Spawnak = Instance.new("TextButton")
 local criminal = Instance.new("TextButton")
+local Tp = Instance.new("TextButton")
 
 --Properties:
 
@@ -72,4 +73,19 @@ criminal.TextSize = 14.000
 criminal.TextWrapped = true
 criminal.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/criminal.lua',true))()
+end)
+
+Tp.Name = "Tp"
+Tp.Parent = Frame
+Tp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tp.Position = UDim2.new(0.027, 0,0.777, 0)
+Tp.Size = UDim2.new(0, 284, 0, 50)
+Tp.Font = Enum.Font.SciFi
+Tp.Text = "Tp tool"
+Tp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tp.TextScaled = true
+Tp.TextSize = 14.000
+Tp.TextWrapped = true
+Tp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/clicktp.lua',true))()
 end)
