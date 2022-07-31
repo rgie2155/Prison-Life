@@ -6,6 +6,7 @@ local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Spawnshotgun = Instance.new("TextButton")
+local Spawnak = Instance.new("TextButton")
 
 --Properties:
 
@@ -40,4 +41,19 @@ Spawnshotgun.TextSize = 14.000
 Spawnshotgun.TextWrapped = true
 Spawnshotgun.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnshot.lua',true))()
+end)
+
+Spawnak.Name = "Spawnak"
+Spawnak.Parent = Frame
+Spawnak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spawnak.Position = UDim2.new(0.027, 0,0.39, 0)
+Spawnak.Size = UDim2.new(0, 284, 0, 50)
+Spawnak.Font = Enum.Font.SciFi
+Spawnak.Text = "Spawn AK-47"
+Spawnak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spawnak.TextScaled = true
+Spawnak.TextSize = 14.000
+Spawnak.TextWrapped = true
+Spawnak.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
 end)
