@@ -1,4 +1,5 @@
--- Made by rgie
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -7,6 +8,7 @@ local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Spawnshotgun = Instance.new("TextButton")
 local Spawnak = Instance.new("TextButton")
+local criminal = Instance.new("TextButton")
 
 --Properties:
 
@@ -56,4 +58,19 @@ Spawnak.TextSize = 14.000
 Spawnak.TextWrapped = true
 Spawnak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
+end)
+
+criminal.Name = "criminal"
+criminal.Parent = Frame
+criminal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+criminal.Position = UDim2.new(0.027, 0,0.584, 0)
+criminal.Size = UDim2.new(0, 284, 0, 50)
+criminal.Font = Enum.Font.SciFi
+criminal.Text = "Become criminal"
+criminal.TextColor3 = Color3.fromRGB(0, 0, 0)
+criminal.TextScaled = true
+criminal.TextSize = 14.000
+criminal.TextWrapped = true
+criminal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/criminal.lua',true))()
 end)
