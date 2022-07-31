@@ -57,3 +57,15 @@ Spawnak.TextWrapped = true
 Spawnak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak',true))()
 end)
+
+player = game.Players.LocalPlayer
+
+player:GetMouse().KeyDown:Connect(function(key)
+	if key == "e" and script.Parent.Visible == false then
+		script.Parent.Visible = true
+	else
+		if key == "e" and script.Parent.Visible == true then
+			script.Parent.Visible = false
+		end
+	end
+end)
