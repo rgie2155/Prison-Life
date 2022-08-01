@@ -131,7 +131,7 @@ Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
-Killaura.MouseButton1Down:connect(function()
+Speed.MouseButton1Down:connect(function()
 local speed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 	while wait() do
 			if speed == 16 or 24 then
