@@ -105,3 +105,15 @@ Killaura.TextWrapped = true
 Killaura.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/killaura.lua',true))()
 end)
+
+player = game.Players.LocalPlayer
+
+player:GetMouse().KeyDown:Connect(function(key)
+	if key == "g" and script.Parent.Visible == false then
+		script.Parent.Visible = true
+	else
+		if key == "g" and script.Parent.Visible == true then
+			script.Parent.Visible = false
+		end
+	end
+end)
