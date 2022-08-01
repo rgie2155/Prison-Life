@@ -91,13 +91,13 @@ Tp.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/clicktp.lua',true))()
 end)
 
-Killaura.Name = "Kill aura"
+Killaura.Name = "Killaura"
 Killaura.Parent = Frame
 Killaura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Killaura.Position = UDim2.new(0.528239191, 0, 0.204243988, 0)
 Killaura.Size = UDim2.new(0, 131, 0, 50)
 Killaura.Font = Enum.Font.SciFi
-Killaura.Text = "Kill aura"
+Killaura.Text = "Killaura"
 Killaura.TextColor3 = Color3.fromRGB(0, 0, 0)
 Killaura.TextScaled = true
 Killaura.TextSize = 14.000
