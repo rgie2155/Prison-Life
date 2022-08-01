@@ -132,7 +132,7 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 Speed.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/killaura.lua',true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/speed.lua',true))()
 end)
 
 -- Scripts:
