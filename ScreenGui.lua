@@ -162,7 +162,7 @@ doors.TextScaled = true
 doors.TextSize = 14.000
 doors.TextWrapped = true
 doors.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/killaura.lua',true))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/destroydoor.lua',true))()
 end)
 
 -- Scripts:
