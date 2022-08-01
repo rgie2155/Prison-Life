@@ -132,11 +132,11 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 Speed.MouseButton1Down:connect(function()
-local speed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
-	if speed == 16 or speed == 24 then
-				speed = 100
-			elseif speed == 100 then
-		speed = 16
+local insane = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	if insane == 16 or insane == 24 then
+				insane = 100
+			elseif insane == 100 then
+		insane = 16
     end
 end)
 
