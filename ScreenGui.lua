@@ -132,6 +132,7 @@ Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
+Speed.TextYAlignment = Enum.TextYAlignment.Top
 Speed.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/speed.lua',true))()
 end)
