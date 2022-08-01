@@ -114,10 +114,10 @@ local function LVKIELK_fake_script()
 	player = game.Players.LocalPlayer
 	
 	player:GetMouse().KeyDown:Connect(function(key)
-		if key == "g" and script.Parent.Visible == false then
+		if key == "RightCtrl" and script.Parent.Visible == false then
 			script.Parent.Visible = true
 		else
-			if key == "g" and script.Parent.Visible == true then
+			if key == "RightCtrl" and script.Parent.Visible == true then
 				script.Parent.Visible = false
 			end
 		end
