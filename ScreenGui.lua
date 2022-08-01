@@ -108,20 +108,18 @@ end)
 
 -- Scripts:
 
-local function LVKIELK_fake_script()
+local function LDOAO_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
-	player = game.Players.LocalPlayer
-	
-	player:GetMouse().KeyDown:Connect(function(key)
-		if key == "g" and script.Parent.Visible == false then
-			script.Parent.Visible = true
-		else
-			if key == "g" and script.Parent.Visible == true then
-				script.Parent.Visible = false
-			end
+	local plr = game.Players.LocalPlayer
+	local UIS = game:GetService(UserInputService)
+	local ui = script.Parent.ScreenGui
+	UIS.InputBegan:Connect(function(Input, IsTyping)
+		if IsTyping then return end
+		if Input.Keycode == Enum.KeyCode.RightControl then
+			ui.Enabled = not ui.Enabled
 		end
 	end)
 	
 end
-coroutine.wrap(LVKIELK_fake_script)()
+coroutine.wrap(LDOAO_fake_script)()
