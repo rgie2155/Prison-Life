@@ -1,3 +1,1 @@
-while wait() do
-  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-end
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
