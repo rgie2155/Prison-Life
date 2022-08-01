@@ -132,10 +132,7 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 Speed.MouseButton1Down:connect(function()
-	local pressed = yes
-		while pressed == yes do
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
-end
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/killaura.lua',true))()
 end)
 
 -- Scripts:
