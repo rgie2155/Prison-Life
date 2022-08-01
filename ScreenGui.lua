@@ -10,6 +10,7 @@ local Spawnak = Instance.new("TextButton")
 local criminal = Instance.new("TextButton")
 local Tp = Instance.new("TextButton")
 local Killaura = Instance.new("TextButton")
+local help = Instance.new("TextLabel")
 
 --Properties:
 
@@ -105,6 +106,18 @@ Killaura.TextWrapped = true
 Killaura.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/killaura.lua',true))()
 end)
+
+help.Name = "help"
+help.Parent = Frame
+help.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+help.Position = UDim2.new(0.863787413, 0, -3.7252903e-09, 0)
+help.Size = UDim2.new(0, 41, 0, 34)
+help.Font = Enum.Font.SciFi
+help.Text = "g to toggle gui"
+help.TextColor3 = Color3.fromRGB(0, 0, 0)
+help.TextScaled = true
+help.TextSize = 30.000
+help.TextWrapped = true
 
 -- Scripts:
 
