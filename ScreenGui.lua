@@ -13,6 +13,7 @@ local Killaura = Instance.new("TextButton")
 local help = Instance.new("TextLabel")
 local Speed = Instance.new("TextButton")
 local speedevel = Instance.new("TextBox")
+local doors = Instance.new("TextButton")
 
 --Properties:
 
@@ -148,6 +149,21 @@ speedevel.Text = "Speed level"
 speedevel.TextColor3 = Color3.fromRGB(0, 0, 0)
 speedevel.TextSize = 14.000
 speedevel.TextWrapped = true
+
+doors.Name = "doors"
+doors.Parent = Frame
+doors.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+doors.Position = UDim2.new(0.528239191, 0, 0.583554387, 0)
+doors.Size = UDim2.new(0, 131, 0, 50)
+doors.Font = Enum.Font.SciFi
+doors.Text = "Destroy all doors"
+doors.TextColor3 = Color3.fromRGB(0, 0, 0)
+doors.TextScaled = true
+doors.TextSize = 14.000
+doors.TextWrapped = true
+doors.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/killaura.lua',true))()
+end)
 
 -- Scripts:
 
