@@ -108,7 +108,7 @@ end)
 
 -- Scripts:
 
-local function LDOAO_fake_script() -- Frame.LocalScript 
+local function LDOAO_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	local plr = game.Players.LocalPlayer
