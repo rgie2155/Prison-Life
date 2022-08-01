@@ -133,13 +133,11 @@ Speed.TextSize = 14.000
 Speed.TextWrapped = true
 Speed.MouseButton1Down:connect(function()
 local speed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
-	while wait() do
-			if speed == 16 or speed == 24 then
+	if speed == 16 or speed == 24 then
 				speed = 100
 			elseif speed == 100 then
 		speed = 16
     end
-end
 end)
 
 -- Scripts:
