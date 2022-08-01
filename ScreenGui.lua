@@ -12,6 +12,7 @@ local Tp = Instance.new("TextButton")
 local Killaura = Instance.new("TextButton")
 local help = Instance.new("TextLabel")
 local Speed = Instance.new("TextButton")
+local speedevel = Instance.new("TextBox")
 
 --Properties:
 
@@ -134,6 +135,19 @@ Speed.TextWrapped = true
 Speed.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/speed.lua',true))()
 end)
+
+speedevel.Name = "speedevel"
+speedevel.Parent = Frame
+speedevel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speedevel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speedevel.BorderSizePixel = 2
+speedevel.Position = UDim2.new(0.568106294, 0, 0.442970812, 0)
+speedevel.Size = UDim2.new(0, 106, 0, 23)
+speedevel.Font = Enum.Font.SourceSans
+speedevel.Text = "Speed level"
+speedevel.TextColor3 = Color3.fromRGB(0, 0, 0)
+speedevel.TextSize = 14.000
+speedevel.TextWrapped = true
 
 -- Scripts:
 
