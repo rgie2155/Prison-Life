@@ -108,20 +108,18 @@ end)
 
 -- Scripts:
 
-local function LVKIELK_fake_script()
+local function LDOAO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	player = game.Players.LocalPlayer
-	
-	player:GetMouse().KeyDown:Connect(function(key)
-		if key == "RightControl" and script.Parent.Visible == false then
-			script.Parent.Visible = true
-		else
-			if key == "RightControl" and script.Parent.Visible == true then
-				script.Parent.Visible = false
-			end
+	local plr = game.Players.LocalPlayer
+	local UIS = game:GetService(UserInputService)
+	local ui = script.Parent.ScreenGui --Replace ScreenGui with the name of your ScreenGui, or keep it the same, to avoid an error--
+	UIS.InputBegan:Connect(function(Input, IsTyping)
+		if IsTyping then return end
+		if Input.Keycode == Enum.KeyCode.RightControl then --You can change the keycode to whatever you like!--
+			ui.Enabled = not ui.Enabled
 		end
 	end)
 	
 end
-coroutine.wrap(LVKIELK_fake_script)()
+coroutine.wrap(LDOAO_fake_script)()
