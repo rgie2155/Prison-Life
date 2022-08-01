@@ -133,7 +133,7 @@ Speed.TextSize = 14.000
 Speed.TextWrapped = true
 Speed.TextYAlignment = Enum.TextYAlignment.Top
 Speed.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/speed.lua',true))()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedevel.Text
 end)
 
 speedevel.Name = "speedevel"
