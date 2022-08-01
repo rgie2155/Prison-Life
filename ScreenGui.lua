@@ -116,7 +116,7 @@ local function LDOAO_fake_script()
 	local ui = script.Parent.ScreenGui
 	UIS.InputBegan:Connect(function(Input, IsTyping)
 		if IsTyping then return end
-		if Input.Keycode == Enum.KeyCode.RightControl then
+		if Input.Keycode == Enum.KeyCode.g then
 			ui.Enabled = not ui.Enabled
 		end
 	end)
