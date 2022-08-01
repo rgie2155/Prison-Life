@@ -129,7 +129,6 @@ Speed.Size = UDim2.new(0, 131, 0, 50)
 Speed.Font = Enum.Font.SciFi
 Speed.Text = "Speed"
 Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 Speed.TextYAlignment = Enum.TextYAlignment.Top
