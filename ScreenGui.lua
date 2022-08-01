@@ -113,10 +113,10 @@ local function LDOAO_fake_script() -- Frame.LocalScript
 
 	local plr = game.Players.LocalPlayer
 	local UIS = game:GetService(UserInputService)
-	local ui = script.Parent.ScreenGui --Replace ScreenGui with the name of your ScreenGui, or keep it the same, to avoid an error--
+	local ui = script.Parent.ScreenGui
 	UIS.InputBegan:Connect(function(Input, IsTyping)
 		if IsTyping then return end
-		if Input.Keycode == Enum.KeyCode.RightControl then --You can change the keycode to whatever you like!--
+		if Input.Keycode == Enum.KeyCode.RightControl then
 			ui.Enabled = not ui.Enabled
 		end
 	end)
