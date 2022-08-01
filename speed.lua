@@ -1,1 +1,1 @@
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedevel.Text
