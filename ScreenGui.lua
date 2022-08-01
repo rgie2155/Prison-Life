@@ -9,6 +9,7 @@ local Spawnshotgun = Instance.new("TextButton")
 local Spawnak = Instance.new("TextButton")
 local criminal = Instance.new("TextButton")
 local Tp = Instance.new("TextButton")
+local Killaura = Instance.new("TextButton")
 
 --Properties:
 
