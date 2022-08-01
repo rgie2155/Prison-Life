@@ -1,0 +1,1 @@
+game.Workspace.Doors:Destroy()
