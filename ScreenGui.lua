@@ -34,7 +34,7 @@ Spawnshotgun.Name = "Spawnshotgun"
 Spawnshotgun.Parent = Frame
 Spawnshotgun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Spawnshotgun.Position = UDim2.new(0.0265780725, 0, 0.204244033, 0)
-Spawnshotgun.Size = UDim2.new(0, 284, 0, 50)
+Spawnshotgun.Size = UDim2.new(0, 131, 0, 50)
 Spawnshotgun.Font = Enum.Font.SciFi
 Spawnshotgun.Text = "Spawn Remington 870"
 Spawnshotgun.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -48,13 +48,13 @@ end)
 Spawnak.Name = "Spawnak"
 Spawnak.Parent = Frame
 Spawnak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Spawnak.Position = UDim2.new(0.027, 0,0.39, 0)
-Spawnak.Size = UDim2.new(0, 284, 0, 50)
+Spawnak.Position = UDim2.new(0.0265780725, 0, 0.389920413, 0)
+Spawnak.Size = UDim2.new(0, 131, 0, 50)
 Spawnak.Font = Enum.Font.SciFi
 Spawnak.Text = "Spawn AK-47"
 Spawnak.TextColor3 = Color3.fromRGB(0, 0, 0)
 Spawnak.TextScaled = true
-Spawnak.TextSize = 14.000
+Spawnak.TextSize = 30.000
 Spawnak.TextWrapped = true
 Spawnak.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/spawnak.lua',true))()
@@ -63,8 +63,8 @@ end)
 criminal.Name = "criminal"
 criminal.Parent = Frame
 criminal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-criminal.Position = UDim2.new(0.027, 0,0.584, 0)
-criminal.Size = UDim2.new(0, 284, 0, 50)
+criminal.Position = UDim2.new(0.0265780725, 0, 0.583554387, 0)
+criminal.Size = UDim2.new(0, 131, 0, 50)
 criminal.Font = Enum.Font.SciFi
 criminal.Text = "Become criminal"
 criminal.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -78,8 +78,8 @@ end)
 Tp.Name = "Tp"
 Tp.Parent = Frame
 Tp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tp.Position = UDim2.new(0.027, 0,0.777, 0)
-Tp.Size = UDim2.new(0, 284, 0, 50)
+Tp.Position = UDim2.new(0.0265780725, 0, 0.766578197, 0)
+Tp.Size = UDim2.new(0, 131, 0, 50)
 Tp.Font = Enum.Font.SciFi
 Tp.Text = "Tp tool"
 Tp.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -89,3 +89,15 @@ Tp.TextWrapped = true
 Tp.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/clicktp.lua',true))()
 end)
+
+Killaura.Name = "Kill aura"
+Killaura.Parent = Frame
+Killaura.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Killaura.Position = UDim2.new(0.528239191, 0, 0.204243988, 0)
+Killaura.Size = UDim2.new(0, 131, 0, 50)
+Killaura.Font = Enum.Font.SciFi
+Killaura.Text = "Kill aura"
+Killaura.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killaura.TextScaled = true
+Killaura.TextSize = 14.000
+Killaura.TextWrapped = true
