@@ -102,3 +102,6 @@ Killaura.TextColor3 = Color3.fromRGB(0, 0, 0)
 Killaura.TextScaled = true
 Killaura.TextSize = 14.000
 Killaura.TextWrapped = true
+Tp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/My-Projects/main/clicktp.lua',true))()
+end)
