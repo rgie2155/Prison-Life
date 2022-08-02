@@ -200,6 +200,7 @@ Player.BorderSizePixel = 2
 Player.Position = UDim2.new(0.568106294, 0, 0.917771876, 0)
 Player.Size = UDim2.new(0, 106, 0, 23)
 Player.Font = Enum.Font.SourceSans
+Player.PlaceholderText = "Player"
 Player.Text = ""
 Player.TextColor3 = Color3.fromRGB(0, 0, 0)
 Player.TextSize = 14.000
