@@ -180,16 +180,6 @@ Kill.TextScaled = true
 Kill.TextSize = 14.000
 Kill.TextWrapped = true
 Kill.MouseButton1Click:Connect(function()
-function GetPlayer(String)
-   local Found = {}
-   local strl = String:lower()
-       for i,v in pairs(game.Players:GetPlayers()) do
-           if v.Name:lower():sub(1, #String) == String:lower() then
-               table.insert(Found,v.Name)
-           end
-       end    
-   return Found    
-end
 local savedteam = game.Players.LocalPlayer.TeamColor.Name
 workspace.Remote.TeamEvent:FireServer("Medium stone grey")
 workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)	
