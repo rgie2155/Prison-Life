@@ -191,7 +191,6 @@ Event:FireServer(A_1, A_2)
 end
 workspace.Remote.TeamEvent:FireServer(savedteam)
 end)
-end)
 
 killbox.Name = "killbox"
 killbox.Parent = Frame
