@@ -147,6 +147,7 @@ speedevel.BorderSizePixel = 2
 speedevel.Position = UDim2.new(0.568106294, 0, 0.442970812, 0)
 speedevel.Size = UDim2.new(0, 106, 0, 23)
 speedevel.Font = Enum.Font.SourceSans
+speedevel.PlaceholderText = "Speed level"
 speedevel.Text = "Speed level"
 speedevel.TextColor3 = Color3.fromRGB(0, 0, 0)
 speedevel.TextSize = 14.000
