@@ -209,20 +209,42 @@ Player.TextWrapped = true
 
 -- Scripts:
 
-local function LVKIELK_fake_script()
+local function NCDJLE_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
-	player = game.Players.LocalPlayer
-	
-	player:GetMouse().KeyDown:Connect(function(key)
-		if key == "g" and script.Parent.Visible == false then
-			script.Parent.Visible = true
-		else
-			if key == "g" and script.Parent.Visible == true then
-				script.Parent.Visible = false
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v.Name)
 			end
-		end
-	end)
+		end    
+		return Found    
+	end
 	
 end
-coroutine.wrap(LVKIELK_fake_script)()
+coroutine.wrap(NCDJLE_fake_script)()
+local function LCGNI_fake_script()
+	local script = Instance.new('LocalScript', Frame)
+
+	local function LVKIELK_fake_script()
+		local script = Instance.new('LocalScript', Frame)
+	
+		player = game.Players.LocalPlayer
+	
+		player:GetMouse().KeyDown:Connect(function(key)
+			if key == "g" and script.Parent.Visible == false then
+				script.Parent.Visible = true
+			else
+				if key == "g" and script.Parent.Visible == true then
+					script.Parent.Visible = false
+				end
+			end
+		end)
+	
+	end
+	coroutine.wrap(LVKIELK_fake_script)()
+	
+end
+coroutine.wrap(LCGNI_fake_script)()
