@@ -14,7 +14,7 @@ local help = Instance.new("TextLabel")
 local Speed = Instance.new("TextButton")
 local speedevel = Instance.new("TextBox")
 local doors = Instance.new("TextButton")
-local killplayer = Instance.new("TextButton")
+local Kill = Instance.new("TextButton")
 local Player = Instance.new("TextBox")
 
 --Properties:
@@ -168,19 +168,19 @@ doors.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/destroydoor.lua',true))()
 end)
 
-killplayer.Name = "killplayer"
-killplayer.Parent = Frame
-killplayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-killplayer.Position = UDim2.new(0.528239191, 0, 0.763925731, 0)
-killplayer.Size = UDim2.new(0, 131, 0, 50)
-killplayer.Font = Enum.Font.SciFi
-killplayer.Text = "Kill player"
-killplayer.TextColor3 = Color3.fromRGB(0, 0, 0)
-killplayer.TextScaled = true
-killplayer.TextSize = 14.000
-killplayer.TextWrapped = true
-killplayer.MouseButton1Down:connect(function()
-	local savedteam = game.Players.LocalPlayer.TeamColor.Name
+Kill.Name = "Kill"
+Kill.Parent = Frame
+Kill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kill.Position = UDim2.new(0.528239191, 0, 0.763925731, 0)
+Kill.Size = UDim2.new(0, 131, 0, 50)
+Kill.Font = Enum.Font.SciFi
+Kill.Text = "Kill player"
+Kill.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kill.TextScaled = true
+Kill.TextSize = 14.000
+Kill.TextWrapped = true
+Kill.MouseButton1Click:Connect(function()
+local savedteam = game.Players.LocalPlayer.TeamColor.Name
 workspace.Remote.TeamEvent:FireServer("Medium stone grey")
 workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)	
 for i,v in pairs(GetPlayer(Player.Text)) do
