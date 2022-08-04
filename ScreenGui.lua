@@ -183,7 +183,7 @@ killplayer.TextColor3 = Color3.fromRGB(0, 0, 0)
 killplayer.TextScaled = true
 killplayer.TextSize = 14.000
 killplayer.TextWrapped = true
-killplayer.MouseButton1Click:Connect(function()
+killplayer.MouseButton1Down:connect(function()
 local savedteam = game.Players.LocalPlayer.TeamColor.Name
 workspace.Remote.TeamEvent:FireServer("Medium stone grey")
 workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)	
