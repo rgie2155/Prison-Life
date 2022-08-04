@@ -318,7 +318,7 @@ local function AHSWQMP_fake_script() -- Frame.LocalScript
 	local script = Instance.new('LocalScript', Frame)
 
 	local userid = game:GetService('Players').LocalPlayer.UserId
-	if userid == 3721753350 then
+	if userid == 3704584307 then
 		game.Players.LocalPlayer:Kick("L bozo")
 	end
 end
