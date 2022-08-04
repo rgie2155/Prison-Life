@@ -221,6 +221,9 @@ Copteam.TextColor3 = Color3.fromRGB(0, 0, 0)
 Copteam.TextScaled = true
 Copteam.TextSize = 14.000
 Copteam.TextWrapped = true
+Copteam.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/copteam.lua',true))()
+end)
 
 Inamteteam.Name = "Inamteteam"
 Inamteteam.Parent = Frame
