@@ -236,6 +236,9 @@ Inamteteam.TextColor3 = Color3.fromRGB(0, 0, 0)
 Inamteteam.TextScaled = true
 Inamteteam.TextSize = 14.000
 Inamteteam.TextWrapped = true
+Inmateteam.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/inmateteam.lua',true))()
+end)
 
 Criminalteam.Name = "Criminal team"
 Criminalteam.Parent = Frame
