@@ -1,3 +1,1 @@
-local A_1 = "Bright orange"
-local Event = game:GetService("Workspace").Remote.TeamEvent
-Event:FireServer(A_1)
+Workspace.Remote.TeamEvent:FireServer("Medium stone grey")
