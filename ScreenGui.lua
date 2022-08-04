@@ -275,7 +275,7 @@ Arrestall.TextWrapped = true
 
 -- Scripts:
 
-local function YJRS_fake_script()
+local function CIXDVT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -290,8 +290,8 @@ local function YJRS_fake_script()
 	end
 	
 end
-coroutine.wrap(YJRS_fake_script)()
-local function AMQEJK_fake_script()
+coroutine.wrap(CIXDVT_fake_script)()
+local function HIDUM_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -313,13 +313,11 @@ local function AMQEJK_fake_script()
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(AMQEJK_fake_script)()
-local function AHSWQMP_fake_script()
+coroutine.wrap(HIDUM_fake_script)()
+local function EDSSCTQ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	local userid = game:GetService('Players').LocalPlayer.UserId
-	if userid == 3704584307 then
-		game.Players.LocalPlayer:Kick("L bozo")
-	end
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
+	
 end
-coroutine.wrap(AHSWQMP_fake_script)()
+coroutine.wrap(EDSSCTQ_fake_script)()
