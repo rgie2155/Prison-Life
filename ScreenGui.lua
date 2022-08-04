@@ -281,6 +281,9 @@ Arrestall.TextColor3 = Color3.fromRGB(0, 0, 0)
 Arrestall.TextScaled = true
 Arrestall.TextSize = 14.000
 Arrestall.TextWrapped = true
+Arrestall.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/arrestall.lua',true))()
+end)
 
 -- Scripts:
 
