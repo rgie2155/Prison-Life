@@ -248,6 +248,9 @@ Criminalteam.TextColor3 = Color3.fromRGB(0, 0, 0)
 Criminalteam.TextScaled = true
 Criminalteam.TextSize = 14.000
 Criminalteam.TextWrapped = true
+Criminalteam.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/criminalteam.lua',true))()
+end)
 
 Neutralteam.Name = "Neutralteam"
 Neutralteam.Parent = Frame
