@@ -275,7 +275,7 @@ Arrestall.TextWrapped = true
 
 -- Scripts:
 
-local function YJRS_fake_script() -- Frame.LocalScript 
+local function YJRS_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -291,7 +291,7 @@ local function YJRS_fake_script() -- Frame.LocalScript
 	
 end
 coroutine.wrap(YJRS_fake_script)()
-local function AMQEJK_fake_script() -- Frame.LocalScript 
+local function AMQEJK_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -314,7 +314,7 @@ local function AMQEJK_fake_script() -- Frame.LocalScript
 	
 end
 coroutine.wrap(AMQEJK_fake_script)()
-local function AHSWQMP_fake_script() -- Frame.LocalScript 
+local function AHSWQMP_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	local userid = game:GetService('Players').LocalPlayer.UserId
