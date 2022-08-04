@@ -289,7 +289,7 @@ end)
 
 -- Scripts:
 
-local function CIXDVT_fake_script() -- Frame.LocalScript 
+local function CIXDVT_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -305,7 +305,7 @@ local function CIXDVT_fake_script() -- Frame.LocalScript
 	
 end
 coroutine.wrap(CIXDVT_fake_script)()
-local function HIDUM_fake_script() -- Frame.LocalScript 
+local function HIDUM_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -328,7 +328,7 @@ local function HIDUM_fake_script() -- Frame.LocalScript
 	
 end
 coroutine.wrap(HIDUM_fake_script)()
-local function EDSSCTQ_fake_script() -- Frame.LocalScript 
+local function EDSSCTQ_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
