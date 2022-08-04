@@ -1,8 +1,5 @@
 -- Made by rgie
 
--- Blacklist:
-Blacklisted = 
-
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
