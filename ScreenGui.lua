@@ -263,6 +263,9 @@ Neutralteam.TextColor3 = Color3.fromRGB(0, 0, 0)
 Neutralteam.TextScaled = true
 Neutralteam.TextSize = 14.000
 Neutralteam.TextWrapped = true
+Neutralteam.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/neutralteam.lua',true))()
+end)
 
 Arrestall.Name = "Arrestall"
 Arrestall.Parent = Frame
