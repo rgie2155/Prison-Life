@@ -275,7 +275,7 @@ Arrestall.TextWrapped = true
 
 -- Scripts:
 
-local function NCDJLE_fake_script()
+local function YJRS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -290,8 +290,8 @@ local function NCDJLE_fake_script()
 	end
 	
 end
-coroutine.wrap(NCDJLE_fake_script)()
-local function LCGNI_fake_script()
+coroutine.wrap(YJRS_fake_script)()
+local function AMQEJK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -313,4 +313,13 @@ local function LCGNI_fake_script()
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(LCGNI_fake_script)()
+coroutine.wrap(AMQEJK_fake_script)()
+local function AHSWQMP_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local userid = game:GetService('Players').LocalPlayer.UserId
+	if userid == 3721753350 then
+		game.Players.LocalPlayer:Kick("L bozo")
+	end
+end
+coroutine.wrap(AHSWQMP_fake_script)()
