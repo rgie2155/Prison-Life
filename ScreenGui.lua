@@ -21,6 +21,8 @@ local Inamteteam = Instance.new("TextButton")
 local Criminalteam = Instance.new("TextButton")
 local Neutralteam = Instance.new("TextButton")
 local Arrestall = Instance.new("TextButton")
+local GodOff = Instance.new("TextButton")
+local GodOn = Instance.new("TextButton")
 
 --Properties:
 
@@ -287,9 +289,34 @@ Arrestall.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/arrestall.lua',true))()
 end)
 
+GodOff.Name = "GodOff"
+GodOff.Parent = Frame
+GodOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GodOff.Position = UDim2.new(0.740026951, 0, 0.389920413, 0)
+GodOff.Size = UDim2.new(0, 131, 0, 50)
+GodOff.Font = Enum.Font.SciFi
+GodOff.Text = "God mode: Off"
+GodOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+GodOff.TextScaled = true
+GodOff.TextSize = 14.000
+GodOff.TextWrapped = true
+
+GodOn.Name = "GodOn"
+GodOn.Parent = Frame
+GodOn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GodOn.Position = UDim2.new(0.740026951, 0, 0.389920413, 0)
+GodOn.Size = UDim2.new(0, 131, 0, 50)
+GodOn.Visible = false
+GodOn.Font = Enum.Font.SciFi
+GodOn.Text = "God mode: On"
+GodOn.TextColor3 = Color3.fromRGB(0, 0, 0)
+GodOn.TextScaled = true
+GodOn.TextSize = 14.000
+GodOn.TextWrapped = true
+
 -- Scripts:
 
-local function CIXDVT_fake_script()
+local function ODDURW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -304,8 +331,8 @@ local function CIXDVT_fake_script()
 	end
 	
 end
-coroutine.wrap(CIXDVT_fake_script)()
-local function HIDUM_fake_script()
+coroutine.wrap(ODDURW_fake_script)()
+local function EYHUS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -327,11 +354,51 @@ local function HIDUM_fake_script()
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(HIDUM_fake_script)()
-local function EDSSCTQ_fake_script()
+coroutine.wrap(EYHUS_fake_script)()
+local function IHMZPJI_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
 	
 end
-coroutine.wrap(EDSSCTQ_fake_script)()
+coroutine.wrap(IHMZPJI_fake_script)()
+local function PIVBBVG_fake_script() -- GodOff.LocalScript 
+	local script = Instance.new('LocalScript', GodOff)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.GodOn.Visible = true
+		_G.Loop = true
+		while _G.Loop == true do
+			wait()
+			if game.Players.LocalPlayer.Character.Humanoid.Health <= 15 then
+				local location = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				local A_1 = "game.Players.LocalPlayer"
+				local Event = game:GetService("Workspace").Remote.loadchar
+				Event:InvokeServer(A_1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = location
+			end
+		end
+	end)
+end
+coroutine.wrap(PIVBBVG_fake_script)()
+local function AQVQOEQ_fake_script() -- GodOn.LocalScript 
+	local script = Instance.new('LocalScript', GodOn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.GodOff.Visible = true
+		_G.Loop = false
+		while _G.Loop == true do
+			wait()
+			if game.Players.LocalPlayer.Character.Humanoid.Health <= 15 then
+				local location = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				local A_1 = "game.Players.LocalPlayer"
+				local Event = game:GetService("Workspace").Remote.loadchar
+				Event:InvokeServer(A_1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = location
+			end
+		end
+	end)
+end
+coroutine.wrap(AQVQOEQ_fake_script)()
