@@ -316,7 +316,7 @@ GodOn.TextWrapped = true
 
 -- Scripts:
 
-local function ODDURW_fake_script() -- Frame.LocalScript 
+local function ODDURW_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -332,7 +332,7 @@ local function ODDURW_fake_script() -- Frame.LocalScript
 	
 end
 coroutine.wrap(ODDURW_fake_script)()
-local function EYHUS_fake_script() -- Frame.LocalScript 
+local function EYHUS_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -355,14 +355,14 @@ local function EYHUS_fake_script() -- Frame.LocalScript
 	
 end
 coroutine.wrap(EYHUS_fake_script)()
-local function IHMZPJI_fake_script() -- Frame.LocalScript 
+local function IHMZPJI_fake_script()
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
 	
 end
 coroutine.wrap(IHMZPJI_fake_script)()
-local function PIVBBVG_fake_script() -- GodOff.LocalScript 
+local function PIVBBVG_fake_script()
 	local script = Instance.new('LocalScript', GodOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -382,7 +382,7 @@ local function PIVBBVG_fake_script() -- GodOff.LocalScript
 	end)
 end
 coroutine.wrap(PIVBBVG_fake_script)()
-local function AQVQOEQ_fake_script() -- GodOn.LocalScript 
+local function AQVQOEQ_fake_script()
 	local script = Instance.new('LocalScript', GodOn)
 
 	script.Parent.MouseButton1Click:Connect(function()
