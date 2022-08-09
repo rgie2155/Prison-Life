@@ -23,6 +23,8 @@ local Neutralteam = Instance.new("TextButton")
 local Arrestall = Instance.new("TextButton")
 local GodOff = Instance.new("TextButton")
 local GodOn = Instance.new("TextButton")
+local tpplayer = Instance.new("TextButton")
+local tptarget = Instance.new("TextBox")
 
 --Properties:
 
@@ -313,6 +315,32 @@ GodOn.TextColor3 = Color3.fromRGB(0, 0, 0)
 GodOn.TextScaled = true
 GodOn.TextSize = 14.000
 GodOn.TextWrapped = true
+
+tpplayer.Name = "tpplayer"
+tpplayer.Parent = Frame
+tpplayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpplayer.Position = UDim2.new(0.740026951, 0, 0.763925731, 0)
+tpplayer.Size = UDim2.new(0, 131, 0, 50)
+tpplayer.Font = Enum.Font.SciFi
+tpplayer.Text = "Tp to player"
+tpplayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+tpplayer.TextScaled = true
+tpplayer.TextSize = 14.000
+tpplayer.TextWrapped = true
+
+tptarget.Name = "tptarget"
+tptarget.Parent = Frame
+tptarget.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tptarget.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tptarget.BorderSizePixel = 2
+tptarget.Position = UDim2.new(0.75782764, 0, 0.917771876, 0)
+tptarget.Size = UDim2.new(0, 106, 0, 23)
+tptarget.Font = Enum.Font.SourceSans
+tptarget.PlaceholderText = "Player"
+tptarget.Text = ""
+tptarget.TextColor3 = Color3.fromRGB(0, 0, 0)
+tptarget.TextSize = 14.000
+tptarget.TextWrapped = true
 
 -- Scripts:
 
