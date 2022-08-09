@@ -328,18 +328,18 @@ tpplayer.TextScaled = true
 tpplayer.TextSize = 14.000
 tpplayer.TextWrapped = true
 tpplayer.MouseButton1Down:connect(function()
-	function Getplayer(Instance)
+	function Getplayer(String)
     local plr
     local strl = Instance:lower()
         for i, v in pairs(game:GetService("Players"):GetPlayers()) do
-            if v.Name:lower():sub(1, #Instance) == Instance:lower() then
+            if v.Name:lower():sub(1, #String) == String:lower() then
                 plr = v
             end 
         end
-        if Instance == "me" then
+        if String == "me" then
                 plr = game.Players.LocalPlayer
             end
-        if Instance == "" or Instance == " " then
+        if String == "" or String == " " then
            plr = nil
         end
     return plr
