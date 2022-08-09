@@ -330,6 +330,7 @@ tpplayer.TextWrapped = true
 tpplayer.MouseButton1Down:connect(function()
 	for i,v in pairs(GetPlayer(tptarget.Text)) do
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v].Character.HumanoidRootPart.CFrame
+		print("Teleport has been successful!")
 	end
 end)
 
