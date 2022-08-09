@@ -327,6 +327,11 @@ tpplayer.TextColor3 = Color3.fromRGB(0, 0, 0)
 tpplayer.TextScaled = true
 tpplayer.TextSize = 14.000
 tpplayer.TextWrapped = true
+tpplayer.MouseButton1Down:connect(function()
+	local target = "tptarget.Text"
+	local localplayer = game.Players[target].Character.HumanoidRootPart.CFrame
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = localplayer
+end)
 
 tptarget.Name = "tptarget"
 tptarget.Parent = Frame
