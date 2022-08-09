@@ -330,7 +330,7 @@ tpplayer.TextWrapped = true
 tpplayer.MouseButton1Down:connect(function()
 	local target = (GetPlayer(tptarget.Text))
 	print("Target successfully found!")
-	local localplayer = game.Players[target].Character.HumanoidRootPart.CFrame
+	local localplayer = game.Players(target).Character.HumanoidRootPart.CFrame
 	print("Found the targets position")
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = localplayer
 	print("Teleport successful")
