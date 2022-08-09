@@ -24,7 +24,7 @@ local Arrestall = Instance.new("TextButton")
 local GodOff = Instance.new("TextButton")
 local GodOn = Instance.new("TextButton")
 local tpplayer = Instance.new("TextButton")
-local tptarget = Instance.new("TextBox")
+local tptarget = String.new("TextBox")
 
 --Properties:
 
