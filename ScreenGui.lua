@@ -328,6 +328,18 @@ tpplayer.TextScaled = true
 tpplayer.TextSize = 14.000
 tpplayer.TextWrapped = true
 tpplayer.MouseButton1Down:connect(function()
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v.Name)
+			end
+		end    
+		return Found    
+	end
+	
+end
 	for i,v in pairs(GetPlayer(tptarget.Text)) do
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v].Character.HumanoidRootPart.CFrame
 end)
