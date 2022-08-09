@@ -328,7 +328,23 @@ tpplayer.TextScaled = true
 tpplayer.TextSize = 14.000
 tpplayer.TextWrapped = true
 tpplayer.MouseButton1Down:connect(function()
-	local target = game:GetService("Players")[tptarget.Text]
+	function GetPlayer(String)
+    local plr
+    local strl = String:lower()
+        for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+            if v.Name:lower():sub(1, #String) == String:lower() then
+                plr = v
+            end 
+        end
+        if String == "me" then
+                plr = game.Players.LocalPlayer
+            end
+        if String == "" or String == " " then
+           plr = nil
+        end
+    return plr
+end
+	local target = GetPlayer(tptarget.Text)
 	print("Target successfully found!")
 	local localplayer = game.Players[target].Character.HumanoidRootPart.CFrame
 	print("Found the targets position")
