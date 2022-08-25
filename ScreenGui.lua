@@ -362,7 +362,7 @@ Jumpstuff.TextSize = 14.000
 Jumpstuff.TextWrapped = true
 Jumpstuff.TextYAlignment = Enum.TextYAlignment.Top
 Jumpstuff.MouseButton1Down:connect(function()
-	  game.Players.LocalPlayer.Character.Humandoid.JumpPower = JumpLevel.Text
+	  game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpLevel.Text
 end)
 
 JumpLevel.Name = "JumpLevel"
