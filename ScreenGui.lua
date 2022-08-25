@@ -363,7 +363,7 @@ Jumpstuff.TextWrapped = true
 Jumpstuff.TextYAlignment = Enum.TextYAlignment.Top
 Jumpstuff.MouseButton1Down:connect(function()
 	  game.Players.LocalPlayer.Character.Humandoid.JumpPower = JumpLevel.Text
-
+end)
 
 JumpLevel.Name = "JumpLevel"
 JumpLevel.Parent = Frame
