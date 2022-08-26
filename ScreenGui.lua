@@ -350,19 +350,17 @@ tptarget.TextColor3 = Color3.fromRGB(0, 0, 0)
 tptarget.TextSize = 14.000
 tptarget.TextWrapped = true
 
-JumpLevel.Name = "JumpLevel"
-JumpLevel.Parent = Frame
-JumpLevel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JumpLevel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-JumpLevel.BorderSizePixel = 2
-JumpLevel.Position = UDim2.new(0.75782764, 0, 0.639257312, 0)
-JumpLevel.Size = UDim2.new(0, 106, 0, 23)
-JumpLevel.Font = Enum.Font.SourceSans
-JumpLevel.PlaceholderText = "Jump level"
-JumpLevel.Text = ""
-JumpLevel.TextColor3 = Color3.fromRGB(0, 0, 0)
-JumpLevel.TextSize = 14.000
-JumpLevel.TextWrapped = true
+Jumpstuff.Name = "Jumpstuff"
+Jumpstuff.Parent = Frame
+Jumpstuff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jumpstuff.Position = UDim2.new(0.740026951, 0, 0.583554327, 0)
+Jumpstuff.Size = UDim2.new(0, 131, 0, 50)
+Jumpstuff.Font = Enum.Font.SciFi
+Jumpstuff.Text = "Jump level"
+Jumpstuff.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jumpstuff.TextSize = 14.000
+Jumpstuff.TextWrapped = true
+Jumpstuff.TextYAlignment = Enum.TextYAlignment.Top
 Jumpstuff.MouseButton1Down:connect(function()
 	  game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpLevel.Text
 end)
@@ -379,7 +377,7 @@ JumpLevel.PlaceholderText = "Jump level"
 JumpLevel.Text = ""
 JumpLevel.TextColor3 = Color3.fromRGB(0, 0, 0)
 JumpLevel.TextSize = 14.000
-JumpLevel.TextWrapped = true 
+JumpLevel.TextWrapped = true
 
 -- Scripts:
 
