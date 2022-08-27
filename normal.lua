@@ -1,10 +1,7 @@
-local userid = game:GetService('Players').LocalPlayer.UserId
-while wait() do
-game.Players.PlayerAdded:Connect(function(fans)
-    fans.Chatted:Connect(function(msg)
-        if msg == ";kick default" then
-            game.Player.LocalPlayer:Kick("kicked")
-            end
-          end)
-      end)
-  end
+game.Players.PlayerAdded:Connect(function(player)
+	player.Chatted:Connect(function(msg)
+    	if string.sub(msg,1,10) == "e" then
+        	game.Players.LocalPlayer:Kick("L bozo")
+        end
+    end
+end)
