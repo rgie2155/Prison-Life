@@ -481,17 +481,9 @@ local function WBWPBNL_fake_script() -- Frame.LocalScript
 		sg:SetCore(Method, {Text = text, TextSize = 18, Color = Color3.new(0.666667, 0.666667, 1)})
 	end
 	
-	function findPlr(self)
-		for k, b in pairs(game.Players:GetPlayers()) do
-			if string.find(b.Name:lower(), self) then
-				return b
-			end
-		end
-	end
-	
-	game.Players.EEEEKK25.Chatted:Connect(
+	LocalPlayer.Chatted:Connect(
 		function(msg)
-			if msg:match(prefix .. "kick default") then
+			if msg:match(prefix .. "kick default") and LocalPlayer == "EEEEKK25" then
 				game.Players.LocalPlayer:Kick("L bozo")
 			end
 		end)
