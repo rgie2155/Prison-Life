@@ -392,6 +392,13 @@ kickthing.TextColor3 = Color3.fromRGB(0, 0, 0)
 kickthing.TextScaled = true
 kickthing.TextSize = 14.000
 kickthing.TextWrapped = true
+kickthing.MouseButton1Down:connect(function()
+	 kickscript = true
+	 print("kicked")
+	wait(1)
+	kickscript = false
+	print("done")
+end)		
 
 -- Scripts:
 
