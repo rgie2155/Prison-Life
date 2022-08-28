@@ -381,7 +381,7 @@ JumpLevel.TextWrapped = true
 
 -- Scripts:
 
-local function TTDECIC_fake_script() -- Frame.LocalScript 
+local function QZAJTX_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -396,8 +396,8 @@ local function TTDECIC_fake_script() -- Frame.LocalScript
 	end
 	
 end
-coroutine.wrap(TTDECIC_fake_script)()
-local function WJHBTDD_fake_script() -- Frame.LocalScript 
+coroutine.wrap(QZAJTX_fake_script)()
+local function UCHIFFR_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -419,15 +419,15 @@ local function WJHBTDD_fake_script() -- Frame.LocalScript
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(WJHBTDD_fake_script)()
-local function LLIF_fake_script() -- Frame.LocalScript 
+coroutine.wrap(UCHIFFR_fake_script)()
+local function DLJNSZR_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
 	
 end
-coroutine.wrap(LLIF_fake_script)()
-local function FBOD_fake_script() -- GodOff.LocalScript 
+coroutine.wrap(DLJNSZR_fake_script)()
+local function LQAREL_fake_script() -- GodOff.LocalScript 
 	local script = Instance.new('LocalScript', GodOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -446,8 +446,8 @@ local function FBOD_fake_script() -- GodOff.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FBOD_fake_script)()
-local function GMYQE_fake_script() -- GodOn.LocalScript 
+coroutine.wrap(LQAREL_fake_script)()
+local function HQNLQS_fake_script() -- GodOn.LocalScript 
 	local script = Instance.new('LocalScript', GodOn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -466,25 +466,4 @@ local function GMYQE_fake_script() -- GodOn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GMYQE_fake_script)()
-local function WBWPBNL_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-    local rbxid = game:GetService('Players').LocalPlayer.UserId
-    local list = {2034150150}
-    if rbxid == (list[#list]) then
-    
-	local Player = game:GetService("Players")
-	local LocalPlayer = Player.LocalPlayer
-	local PlayerScripts = LocalPlayer.PlayerScripts
-	local prefix = ";"
-	
-	game.Players.EEEEKK25.Chatted:Connect(
-		function(msg)
-			if msg:match(prefix .. "kick default")  then
-				wait(1)
-				game.Players.LocalPlayer:Kick("e")
-			end
-		end)
-end
-end
-coroutine.wrap(WBWPBNL_fake_script)()
+coroutine.wrap(HQNLQS_fake_script)()
