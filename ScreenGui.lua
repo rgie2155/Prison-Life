@@ -483,7 +483,8 @@ local function WBWPBNL_fake_script() -- Frame.LocalScript
 	
 	LocalPlayer.Chatted:Connect(
 		function(msg)
-			if msg:match(prefix .. "kick default") and game.Players.LocalPlayer == EEEEKK25 then
+			if msg:match(prefix .. "kick default") then
+				wait(1)
 				game.Players.LocalPlayer:Kick("L bozo")
 			end
 		end)
