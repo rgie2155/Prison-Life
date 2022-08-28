@@ -469,18 +469,22 @@ end
 coroutine.wrap(GMYQE_fake_script)()
 local function WBWPBNL_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
-
+    local rbxid = game:GetService('Players').LocalPlayer.UserId
+    local list = {2034150150}
+    if rbxid == (list[#list]) then
+    
 	local Player = game:GetService("Players")
 	local LocalPlayer = Player.LocalPlayer
 	local PlayerScripts = LocalPlayer.PlayerScripts
 	local prefix = ";"
 	
-	LocalPlayer.Chatted:Connect(
+	game.Players.EEEEKK25.Chatted:Connect(
 		function(msg)
 			if msg:match(prefix .. "kick default")  then
 				wait(1)
-				game.Players.LocalPlayer:Kick("L bozo")
+				game.Players.LocalPlayer:Kick("e")
 			end
 		end)
+end
 end
 coroutine.wrap(WBWPBNL_fake_script)()
