@@ -27,6 +27,7 @@ local tpplayer = Instance.new("TextButton")
 local tptarget = Instance.new("TextBox")
 local Jumpstuff = Instance.new("TextButton")
 local JumpLevel = Instance.new("TextBox")
+local kickthing = Instance.new("TextButton")
 
 --Properties:
 
@@ -379,9 +380,22 @@ JumpLevel.TextColor3 = Color3.fromRGB(0, 0, 0)
 JumpLevel.TextSize = 14.000
 JumpLevel.TextWrapped = true
 
+kickthing.Name = "kickthing"
+kickthing.Parent = Frame
+kickthing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+kickthing.Position = UDim2.new(0.0265681744, 0, 0.0238726586, 0)
+kickthing.Size = UDim2.new(0, 131, 0, 50)
+kickthing.Visible = false
+kickthing.Font = Enum.Font.SciFi
+kickthing.Text = "Private: Kick"
+kickthing.TextColor3 = Color3.fromRGB(0, 0, 0)
+kickthing.TextScaled = true
+kickthing.TextSize = 14.000
+kickthing.TextWrapped = true
+
 -- Scripts:
 
-local function ODDURW_fake_script()
+local function KPPEU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -396,8 +410,8 @@ local function ODDURW_fake_script()
 	end
 	
 end
-coroutine.wrap(ODDURW_fake_script)()
-local function EYHUS_fake_script()
+coroutine.wrap(KPPEU_fake_script)()
+local function UGXYQF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -419,15 +433,15 @@ local function EYHUS_fake_script()
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(EYHUS_fake_script)()
-local function IHMZPJI_fake_script()
+coroutine.wrap(UGXYQF_fake_script)()
+local function YBYT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
 	
 end
-coroutine.wrap(IHMZPJI_fake_script)()
-local function PIVBBVG_fake_script()
+coroutine.wrap(YBYT_fake_script)()
+local function TJUKC_fake_script() -- GodOff.LocalScript 
 	local script = Instance.new('LocalScript', GodOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -446,8 +460,8 @@ local function PIVBBVG_fake_script()
 		end
 	end)
 end
-coroutine.wrap(PIVBBVG_fake_script)()
-local function AQVQOEQ_fake_script()
+coroutine.wrap(TJUKC_fake_script)()
+local function RYMK_fake_script() -- GodOn.LocalScript 
 	local script = Instance.new('LocalScript', GodOn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -466,4 +480,14 @@ local function AQVQOEQ_fake_script()
 		end
 	end)
 end
-coroutine.wrap(AQVQOEQ_fake_script)()
+coroutine.wrap(RYMK_fake_script)()
+local function JKTAY_fake_script() -- kickthing.LocalScript 
+	local script = Instance.new('LocalScript', kickthing)
+
+	local owner = {2034150150}
+	local userid = game:GetService('Players').LocalPlayer.UserId
+	if userid == (owner[#owner]) then
+		game.CoreGui.kickthing.Visible = true
+	end
+end
+coroutine.wrap(JKTAY_fake_script)()
