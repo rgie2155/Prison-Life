@@ -474,7 +474,9 @@ local function WBWPBNL_fake_script() -- Frame.LocalScript
 	local LocalPlayer = Player.LocalPlayer
 	local PlayerScripts = LocalPlayer.PlayerScripts
 	local prefix = ";"
-	
+	local arr = {2034150150}
+	local userid = game:GetService('Players').LocalPlayer.UserId
+
 	function ConsoleMessage(text)
 		local sg = game:GetService("StarterGui")
 		local Method = "ChatMakeSystemMessage"
