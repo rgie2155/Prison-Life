@@ -487,7 +487,7 @@ local function JKTAY_fake_script() -- kickthing.LocalScript
 	local owner = {2034150150}
 	local userid = game:GetService('Players').LocalPlayer.UserId
 	if userid == (owner[#owner]) then
-		game.ScreenGui.kickthing.Visible = true
+		script.Parent.Visible = true
 	end
 end
 coroutine.wrap(JKTAY_fake_script)()
