@@ -27,7 +27,6 @@ local tpplayer = Instance.new("TextButton")
 local tptarget = Instance.new("TextBox")
 local Jumpstuff = Instance.new("TextButton")
 local JumpLevel = Instance.new("TextBox")
-local kickthing = Instance.new("TextButton")
 
 --Properties:
 
@@ -380,29 +379,9 @@ JumpLevel.TextColor3 = Color3.fromRGB(0, 0, 0)
 JumpLevel.TextSize = 14.000
 JumpLevel.TextWrapped = true
 
-kickthing.Name = "kickthing"
-kickthing.Parent = Frame
-kickthing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-kickthing.Position = UDim2.new(0.0265681744, 0, 0.0238726586, 0)
-kickthing.Size = UDim2.new(0, 131, 0, 50)
-kickthing.Visible = false
-kickthing.Font = Enum.Font.SciFi
-kickthing.Text = "Private: Kick"
-kickthing.TextColor3 = Color3.fromRGB(0, 0, 0)
-kickthing.TextScaled = true
-kickthing.TextSize = 14.000
-kickthing.TextWrapped = true
-kickthing.MouseButton1Down:connect(function()
-	 kickscript = true
-	 print("kicked")
-	wait(1)
-	kickscript = false
-	print("done")
-end)		
-
 -- Scripts:
 
-local function HCGNES_fake_script() -- Frame.LocalScript 
+local function TTDECIC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	function GetPlayer(String)
@@ -417,8 +396,8 @@ local function HCGNES_fake_script() -- Frame.LocalScript
 	end
 	
 end
-coroutine.wrap(HCGNES_fake_script)()
-local function YQRF_fake_script() -- Frame.LocalScript 
+coroutine.wrap(TTDECIC_fake_script)()
+local function WJHBTDD_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local function LVKIELK_fake_script()
@@ -440,15 +419,15 @@ local function YQRF_fake_script() -- Frame.LocalScript
 	coroutine.wrap(LVKIELK_fake_script)()
 	
 end
-coroutine.wrap(YQRF_fake_script)()
-local function CKUH_fake_script() -- Frame.LocalScript 
+coroutine.wrap(WJHBTDD_fake_script)()
+local function LLIF_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/rgie2155/Prison-Life/main/blacklist.lua',true))()
 	
 end
-coroutine.wrap(CKUH_fake_script)()
-local function GORTRY_fake_script() -- GodOff.LocalScript 
+coroutine.wrap(LLIF_fake_script)()
+local function FBOD_fake_script() -- GodOff.LocalScript 
 	local script = Instance.new('LocalScript', GodOff)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -467,8 +446,8 @@ local function GORTRY_fake_script() -- GodOff.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GORTRY_fake_script)()
-local function FMZO_fake_script() -- GodOn.LocalScript 
+coroutine.wrap(FBOD_fake_script)()
+local function GMYQE_fake_script() -- GodOn.LocalScript 
 	local script = Instance.new('LocalScript', GodOn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -487,18 +466,8 @@ local function FMZO_fake_script() -- GodOn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FMZO_fake_script)()
-local function MODNI_fake_script() -- kickthing.LocalScript 
-	local script = Instance.new('LocalScript', kickthing)
-
-	local owner = {2034150150}
-	local userid = game:GetService('Players').LocalPlayer.UserId
-	if userid == (owner[#owner]) then
-		game.CoreGui.kickthing.Visible = true
-	end
-end
-coroutine.wrap(MODNI_fake_script)()
-local function XMVMLYM_fake_script() -- Frame.LocalScript 
+coroutine.wrap(GMYQE_fake_script)()
+local function WBWPBNL_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Player = game:GetService("Players")
@@ -528,4 +497,4 @@ local function XMVMLYM_fake_script() -- Frame.LocalScript
 		end)
 	_G.toggle = true
 end
-coroutine.wrap(XMVMLYM_fake_script)()
+coroutine.wrap(WBWPBNL_fake_script)()
